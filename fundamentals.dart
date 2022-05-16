@@ -11,3 +11,8 @@ void main() {
 
   print(firstName + ' ' + lastName);
 }
+
+/// There are 3 types of comments are available in Dart language : 
+/// 1.//(single line) 
+/// 2./* */(multi-line)
+/// 3.///(Documentation)
