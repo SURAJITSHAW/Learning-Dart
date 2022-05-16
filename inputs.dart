@@ -1,5 +1,6 @@
 // for input/output operation had to import this library
 import 'dart:io';
+// stdout, stdin etc all contained in dart:io library
 
 main() {
   // print the string in the terminal
