@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 /*
 i. List
 1.Can store different types of value 
@@ -21,21 +23,21 @@ fullName['firstName'] = 'Surajit';
 
 void main(List<String> args) {
   /* List (mutable)*/
-  List names = ['surajit', 'shaw', 454, 44.44, true];
-  print(names.length);
+  List names1 = ['surajit', 'shaw', 454, 44.44, true];
+  print(names1.length);
 
   // Statically typed list
-  List <String> names = ['surajit', 'shaw'];
+  List <String> names2 = ['surajit', 'shaw'];
 
   // Constant List (immutable )
-  List <String> names = const ['surajit', 'shaw'];
+  List <String> names3 = const ['surajit', 'shaw'];
 
   /* Set */
   var uniqueNames = {'surajit', 'akshay', 'surajit'}; // 'surajit', 'akshay'
 
   //  empty Set
-  var uniqueNames = <String> {};
-  Set uniqueNames = {};
+  var uniqueNames1 = <String> {};
+  Set uniqueNames2 = {};
 
 
   /* Map */
@@ -46,6 +48,6 @@ void main(List<String> args) {
   };
 
   // empty Map 
-  var gifts = Map();
-  var gifts = {};
+  var gifts1 = Map();
+  var gifts2 = {};
 }
