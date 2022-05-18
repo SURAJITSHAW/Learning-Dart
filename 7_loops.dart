@@ -10,4 +10,10 @@ void main(List<String> args) {
   numbers.forEach((element) => {print(element)});
   // 4. while loop
   // 5. do...while loop
+
+  /* 
+    break --> Get out of this fu*king loop, now!
+
+    continue --> Didn't had to execute the remaining statements, just keep continue from here (i.e. go to the next iteration)
+   */
 }
