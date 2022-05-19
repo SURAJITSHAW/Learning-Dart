@@ -28,15 +28,42 @@ class Person {
   static const int myAge = 19; // But in case 'const' you can't change the value at run time or ever. Compile time constant.
 
   Person.constVar(this.firstName);
+}
 
+/* Inheritance */
 
+// super class
+class Vehicle {
+  String model;
+  int year;
 
+  Vehicle(this.model, this.year);
 
+  void showOutput() {
+    print('Model: $model release in $year');
+  }
+}
+
+// child class
+class Car extends Vehicle {
+  double price;
+
+  Car(String model, int year, this.price) : super(model, year);
+
+  void showOutput() {
+    super.showOutput();
+    print("Price: $price \$");
+  }
 }
 
 main() {
+  // class intro
   Person person1 = Person('surajit shaw', 'surajit');
   person1.showOutput();
+
+  // inheritance section
+  var myCar = Car("Lamborgini", 2022, 100000);
+  myCar.showOutput();
 }
 
 /* Outside the class, final & const both keyword behaved like same. Means you cannot reassign variable which are defined with this 2 keyword. */
