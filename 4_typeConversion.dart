@@ -1,4 +1,4 @@
-// .parse() -> is a method which accepts strings and perform type conversion
+// .parse() -> is a method which accepts strings and perform type conversion to it calling Object type. Like in the next example int calling the parse method, so whatever arguments the parse mathod gets trying to convert into int.
 // assert() -> is a in-built function for comparsion
 
 main() {
