@@ -50,11 +50,15 @@ class Car extends Vehicle {
 
   Car(String model, int year, this.price) : super(model, year);
 
+  @override
   void showOutput() {
     super.showOutput();
     print("Price: $price \$");
   }
 }
+
+
+/* Method Overriding -> When you redefine a method which is also present in super class, it's a good practice to put the @override keyword before it for a safety and other programmers let know that. If you don't do that it's not cause you an error. */
 
 main() {
   // class intro
