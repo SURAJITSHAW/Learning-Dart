@@ -38,3 +38,5 @@ main() {
   Person person1 = Person('surajit shaw', 'surajit');
   person1.showOutput();
 }
+
+/* Outside the class, final & const both keyword behaved like same. Means you cannot reassign variable which are defined with this 2 keyword. */
