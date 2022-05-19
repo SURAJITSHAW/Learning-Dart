@@ -60,6 +60,20 @@ class Car extends Vehicle {
 
 /* Method Overriding -> When you redefine a method which is also present in super class, it's a good practice to put the @override keyword before it for a safety and other programmers let know that. If you don't do that it's not cause you an error. */
 
+/* Getters and Setters -> Special method which gives Read and Write acess to an object properteis*/
+class Rectangle {
+  num left, top, width, height;
+
+  Rectangle(this.left, this.top, this.width, this.height);
+
+
+  // Define two calculated properties : right and bottom
+  num get right => left + width;
+  set right(num value) => left = value - width;
+  num get bottom => top + height;
+  set bottom(num value) => top = value-height;
+}
+
 main() {
   // class intro
   Person person1 = Person('surajit shaw', 'surajit');
@@ -68,6 +82,13 @@ main() {
   // inheritance section
   var myCar = Car("Lamborgini", 2022, 100000);
   myCar.showOutput();
+
+  // getter & setter section
+  var myRectangle = Rectangle(2, 3, 44, 13);
+  print(myRectangle.left);
+  myRectangle.right = 12; // // Using setter to set the value
+  print(myRectangle.right); // Using getter to the value
+  print(myRectangle.left);
 }
 
 /* Outside the class, final & const both keyword behaved like same. Means you cannot reassign variable which are defined with this 2 keyword. */
